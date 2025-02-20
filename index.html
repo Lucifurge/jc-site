@@ -11,10 +11,10 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
-    /* Global styles: Bold monospaced font for everything */
+    /* Force all text to be monospaced and bold */
     *, *::before, *::after {
-      font-family: "Fira Code", monospace;
-      font-weight: bold;
+      font-family: "Fira Code", monospace !important;
+      font-weight: bold !important;
     }
 
     body {
@@ -76,9 +76,11 @@
       0% {
         background-position: 0% 50%;
       }
+
       50% {
         background-position: 100% 50%;
       }
+
       100% {
         background-position: 0% 50%;
       }
