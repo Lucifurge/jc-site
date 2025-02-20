@@ -11,10 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
+    /* Global styles: Bold monospaced font for everything */
+    *, *::before, *::after {
+      font-family: "Fira Code", monospace;
+      font-weight: bold;
+    }
+
     body {
       background-color: #0a192f;
       color: #e0f7ff;
-      font-family: "Fira Code", monospace;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -28,7 +33,6 @@
     }
 
     .navbar-brand {
-      font-weight: bold;
       font-size: 1.8rem;
       background: linear-gradient(90deg, #00c6ff, #0072ff);
       background-size: 400% 400%;
@@ -39,7 +43,6 @@
 
     .navbar-nav .nav-link {
       color: #cce7ff !important;
-      font-weight: bold;
       margin: 0 12px;
       transition: color 0.3s ease, transform 0.3s ease;
     }
@@ -54,14 +57,12 @@
       padding: 100px 20px;
       background: linear-gradient(180deg, rgba(10, 25, 47, 0.95), rgba(5, 10, 30, 0.95));
       border-radius: 15px;
-      color: white;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
       margin-top: 1rem;
     }
 
     .hero h1 {
       font-size: 4rem;
-      font-weight: bold;
       text-transform: uppercase;
       background: linear-gradient(90deg, #00c6ff, #0072ff);
       background-size: 400% 400%;
@@ -75,11 +76,9 @@
       0% {
         background-position: 0% 50%;
       }
-
       50% {
         background-position: 100% 50%;
       }
-
       100% {
         background-position: 0% 50%;
       }
@@ -150,7 +149,6 @@
     .form-control:focus {
       background: #2f1d30;
       border-color: #0656ad;
-      color: #e0f7ff;
       box-shadow: none;
     }
 
